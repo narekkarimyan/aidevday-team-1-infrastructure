@@ -3,10 +3,9 @@ variable "aws_region" {
 }
 
 variable "aws_credential_file" {
-  default = "/root/.aws/credentials"
+  default = "~/.aws/credentials"
 }
 
 variable "aws_config_profile" {
   default = "travel-dev"
 }
-
