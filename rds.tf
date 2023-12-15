@@ -10,6 +10,7 @@ resource "aws_db_instance" "mysql" {
   multi_az              = false
   parameter_group_name  = "default.mysql5.7"
   skip_final_snapshot   = true
+  publicly_accessible   = true
 
   tags = {
     Component = local.aidevday_tags.component
